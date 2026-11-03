@@ -1,0 +1,9 @@
+<h2>{{ service.service_name }}</h2>
+
+<p>{{ service.description }}</p>
+<p>{{ service.price }}</p>
+<p>{{ service.duration }}</p>
+<p>{{ service.get_status_display }}</p>
+
+<a href="{% url 'service_update' service.pk %}">Edit</a>
+<a href="{% url 'service_list' %}">Back</a>
